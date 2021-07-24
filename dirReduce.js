@@ -11,7 +11,7 @@ function arrayEquals(a, b) {
 }
 
 function dirReduce(arr) {
-  let before = [...arr];
+  let before = arr;
   let opposite = {"NORTH":"SOUTH", "EAST":"WEST", "SOUTH":"NORTH", "WEST": "EAST"};
   for(;;) {
     let after = before.reduce((acc, dir) => {

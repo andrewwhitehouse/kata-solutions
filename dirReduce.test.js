@@ -15,4 +15,7 @@ describe('direction reduce', () => {
   it('Nested reductions', () => {
     expect(dirReduce(["NORTH", "EAST", "WEST", "SOUTH", "EAST"])).toEqual( ["EAST"]);
   });
+  it('CW Example 1', () => {
+    expect(dirReduce(['EAST', 'WEST', 'NORTH', 'SOUTH', 'SOUTH', 'WEST', 'EAST', 'WEST', 'SOUTH', 'NORTH'])).toEqual(  ['SOUTH', 'WEST']);
+  });
 });
